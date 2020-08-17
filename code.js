@@ -10,3 +10,8 @@ const helloWorld = function() {
 function sayHello(input){
     return "Hello, " + input + "!";
 }
+
+const isFive = function(input){
+    return Number(input) === 5;
+};
+

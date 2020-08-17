@@ -1,4 +1,4 @@
-// Unit tests for the helloWorld function
+// helloWorld tests
 describe('helloWorld', function() {
     it('should be a defined function', function() {
       expect(typeof helloWorld).toBe('function');
@@ -14,6 +14,7 @@ describe('helloWorld', function() {
     });
 });
 
+//sayHello tests
 describe('sayHello', function (){
     it('should be a defined function', function() {
         expect(typeof sayHello).toBe('function');
@@ -32,3 +33,24 @@ describe('sayHello', function (){
     });
 })
 
+// isFive tests
+describe('isFive', function(){
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean value', function() {
+        expect(typeof isFive(5)).toBe('boolean');
+        expect(typeof isFive(-5)).toBe('boolean');
+    });
+    it('return true for 5 ', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true for "5"', function () {
+        expect(isFive('5')).toBe(true);
+    });
+})
+
+// isEven tests
+describe('isEven', function () {
+    
+});
